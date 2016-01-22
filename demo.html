@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="style/style.css"/>
+</head>
+<body>
+
+<input type="text" class="getcity"/>
+
+<div class="city-list" id="cityPanel" style="display:none;">
+  <div class="search-city" id="pinYinSearch" style="display:none;">
+    <div id="address_warp">
+      <div id="address_message">按拼音排序</div>
+      <div id="address_list">
+      </div>
+    </div>
+  </div>
+  <div class="select-city" style="display:none;" id="cityPanelList">
+    <p class="">热门城市(可直接输入城市名称或城市拼音)<b class="close-btn right" id="cityClose">关闭</b></p>
+    <ul class="city-area" id="cityArea">
+      <li><a class="active" href="javascript:;" rel="native">国内</a></li>
+      <li><a href="javascript:;" rel="inter">国际/城区</a></li>
+    </ul>
+    <div id="nativeCityBox" rel="native">
+      <ul class="city-cate" id="nativeTab">
+      </ul>
+      <div id="nativeCityList">
+        <ul class="hot-city">
+        </ul>
+      </div>
+    </div>
+    <div id="interCityBox" rel="inter">
+      <ul class="city-cate" id="interTab">
+      </ul>
+      <div id="interCityList">
+        <ul class="hot-city">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/address.js"></script>
+<script src="js/cityOperation.js"></script>
+</body>
+</html>
